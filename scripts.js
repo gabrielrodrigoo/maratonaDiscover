@@ -106,8 +106,9 @@ const Utils = {
 
     formatAmount(value){
       
+        value = value * 100
 
-        return Number(value.replace(/\,\./g, "")) * 100
+        return Math.round(value)
     },
 
     formatDate(date){
